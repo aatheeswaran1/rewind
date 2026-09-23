@@ -12,16 +12,23 @@ A shared photo platform for college classmates with a nostalgia timeline.
 
 ## Tech Stack
 - **Frontend**: React, Tailwind CSS (coming soon)
-- **Backend**: Node.js, Express (coming soon)
-- **Database**: PostgreSQL (coming soon)
+- **Backend**: Python, FastAPI, SQLAlchemy 2.x, Alembic
+- **Database**: PostgreSQL
 
 ## Installation
 
-### Prerequisites
-- Node.js v16+
-- npm or yarn
+### Backend
+See [backend/README.md](backend/README.md) for setup, everyday commands (migrations, schema checks) and the changelog.
 
-### Setup
+Quick start (from `backend/`):
+```bash
+python3 -m venv venv && source venv/bin/activate
+pip install -r requirements.txt
+cp .env.example .env        # then set your DATABASE_URL
+alembic upgrade head
+```
+
+### Frontend
 Coming soon...
 
 ## License
